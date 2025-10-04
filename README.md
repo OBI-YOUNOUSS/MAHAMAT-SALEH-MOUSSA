@@ -1,60 +1,69 @@
-#  Site Web de l'ATNV (Association Tchadienne pour la Non-Violence)
+# Site Web Portfolio - Mahamat Saleh Moussa
 
-Ce projet est un site web professionnel développé pour **l’ATNV**, une organisation qui lutte pour la non violence au tchad
+Site web officiel de **Mahamat Saleh Moussa**, Député du 5e Arrondissement de N'Djamena et Coordinateur de la plateforme "Tchad d'Abord".
 
 ---
 
-##  Aperçu du site
+## 🎯 Aperçu du site
 
 ### Accueil
-![Accueil](./src//captures//atnv.png)
-
-
+![Accueil](./src/assets/captures/accueil.png)
 
 ---
 
-##  Technologies utilisées
+## 🛠 Technologies utilisées
 
-- **React** avec **TypeScript** : pour une architecture moderne et robuste.
-- **Tailwind CSS** : pour un design rapide, propre et responsive.
-- **React Router DOM** : pour la gestion des routes et la navigation entre les pages.
+- **React** avec **TypeScript** : pour une architecture moderne et robuste
+- **Tailwind CSS** : pour un design professionnel et responsive  
+- **React Router DOM** : pour la navigation entre les pages
 
 ---
 
-##  Structure du projet
+## 📁 Structure du projet
 
 src/
-├── assets/ # Images et ressources statiques
-├── components/ # Composants réutilisables : Header, Footer, Hero, Features
-├── layouts/ # Layout principal pour le rendu global
-├── pages/ # Pages principales du site : Accueil, Contact, Faire un don, etc.
-├── App.tsx # Configuration globale des routes
-└── main.tsx # Point d’entrée de l’application
+├── assets/ # Images et ressources
+├── components/ # Composants réutilisables
+├── layouts/ # Layout principal
+├── pages/ # Pages du portfolio
+├── hooks/ # Custom hooks
+├── App.tsx # Configuration des routes
+└── main.tsx # Point d'entrée
+text
 
 
 ---
 
-##  Fonctionnalités principales
+## ✨ Fonctionnalités principales
 
--  Page d'accueil avec image héro et messages forts
--  Présentation des activités et objectifs de l'ATNV
--  Page de contact avec formulaire
--  Formulaire de dons (monétaires ou en nature)
--  Navigation fluide entre les pages
+- **Page d'accueil** avec présentation et actualités récentes
+- **Biographie** complète et parcours politique
+- **Engagements** et plateforme "Tchad d'Abord"
+- **Actualités** et activités parlementaires
+- **Avis & Réflexions** sur les enjeux nationaux
+- **Galerie** photos et médias
+- **Contact** professionnel
 
+---
 
-
-
-
-##  Installation
+## 🚀 Installation
 
 ```bash
-# Clone du dépôt
-git clone https://github.com/votre-utilisateur/atnv-site.git
-cd atnv-site
-
 # Installation des dépendances
 npm install
 
 # Lancement du serveur de développement
 npm run dev
+
+
+
+### **2. Vérification et nettoyage des derniers fichiers**
+
+**Dans `components/Header.tsx`** - Vérifier que le logo et le titre sont bien pour Mahamat Saleh Moussa :
+
+```tsx
+<Link to="/" className="flex items-center">
+  <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
+    <img src={logo} alt="Mahamat Saleh Moussa" className="w-30 h-30"/>
+  </span>
+</Link>
